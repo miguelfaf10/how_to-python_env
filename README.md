@@ -127,6 +127,7 @@ Automate the Automation
 
 To use it, you first need to add a config file called .pre-commit-config.yaml to the top-level folder of your project. In that file, you configure all the hooks that should run. With mypy and black, this file looks like
 
+```sh
 repos:
 -   repo: https://github.com/ambv/black
     rev: 19.3b0
@@ -137,6 +138,7 @@ repos:
     rev: v0.740
     hooks:
     - id: mypy
+```
 
 Last, you must tell pre-commit to set up the hooks by executing
 
